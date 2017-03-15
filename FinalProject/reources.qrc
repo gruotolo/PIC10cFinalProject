@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>Recolor (1).png</file>
+        <file>pixel-tank_b.png</file>
+    </qresource>
+</RCC>
