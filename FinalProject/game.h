@@ -4,7 +4,7 @@
 #include <QWidget>
 #include <QGraphicsScene>
 #include "Player.h"
-
+#include "enemytruck.h"
 
 class Game: public QGraphicsView{
 public:
