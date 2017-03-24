@@ -26,12 +26,14 @@ DEFINES += QT_DEPRECATED_WARNINGS
 SOURCES += main.cpp \
     Player.cpp \
     Game.cpp \
-    enemytruck.cpp
+    enemytruck.cpp \
+    missle.cpp
 
 HEADERS  += \
     Player.h \
     Game.h \
-    enemytruck.h
+    enemytruck.h \
+    missle.h
 
 FORMS    +=
 
