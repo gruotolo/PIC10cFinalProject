@@ -1,6 +1,6 @@
 <RCC>
     <qresource prefix="/images">
-        <file>Recolor (1).png</file>
+        <file>land.png</file>
         <file>pixel-tank_b.png</file>
         <file>truck.png</file>
         <file>missle.png</file>

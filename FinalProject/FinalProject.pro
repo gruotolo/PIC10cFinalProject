@@ -24,16 +24,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp \
-    Player.cpp \
     Game.cpp \
     enemytruck.cpp \
-    missle.cpp
+    missle.cpp \
+    tank.cpp \
+    totalpoints.cpp
 
 HEADERS  += \
-    Player.h \
     Game.h \
     enemytruck.h \
-    missle.h
+    missle.h \
+    totalpoints.h \
+    tank.h
 
 FORMS    +=
 
