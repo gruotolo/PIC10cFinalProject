@@ -28,14 +28,20 @@ SOURCES += main.cpp \
     enemytruck.cpp \
     missle.cpp \
     tank.cpp \
-    totalpoints.cpp
+    totalpoints.cpp \
+    town.cpp \
+    basehealth.cpp \
+    gameover.cpp
 
 HEADERS  += \
     Game.h \
     enemytruck.h \
     missle.h \
     totalpoints.h \
-    tank.h
+    tank.h \
+    town.h \
+    basehealth.h \
+    gameover.h
 
 FORMS    +=
 

@@ -3,7 +3,10 @@
 #include "missle.h"
 #include "enemytruck.h"
 #include <QGraphicsScene>
-
+#include "basehealth.h"
+#include "gameover.h"
+#include  "game.h"
+extern Game * game;
 tank::tank(QGraphicsItem *parent): QGraphicsPixmapItem(parent){
 
     setPixmap(QPixmap(":/images/pixel-tank_b.png"));
@@ -33,9 +36,23 @@ void tank::keyPressEvent(QKeyEvent *event){
         m->setPos(x()+45,y());
         scene()->addItem(m);
     }
+
+
+
+
+
    }
 
 void tank::spawn(){
     enemytruck* truck = new enemytruck();
+
     scene()->addItem(truck);
+    if ( game->health->getHealth()==0)
+       {
+           gameover* gover = new gameover();
+           scene()->addItem(gover);
+            delete this;
+
+        }
+
 }

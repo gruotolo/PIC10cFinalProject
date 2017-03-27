@@ -20,15 +20,15 @@ enemytruck::enemytruck(QGraphicsItem *parent): QGraphicsPixmapItem(parent){
            connect(timer,SIGNAL(timeout()),this,SLOT(move()));
 
 
-         timer->start(50);
+         timer->start(40);
 
 }
 
 void enemytruck::move(){
     setPos(x()-5,y());
 
-    if (pos().x() < -400){
-       // game->health->decrease();
+    if (pos().x() < -400 && game->health->getHealth()!=0){
+       game->health->decrease();
 
         scene()->removeItem(this);
         delete this;

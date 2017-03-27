@@ -4,5 +4,6 @@
         <file>pixel-tank_b.png</file>
         <file>truck.png</file>
         <file>missle.png</file>
+        <file>town.png</file>
     </qresource>
 </RCC>
